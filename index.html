@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get ID</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="github-sign.png">
+</head>
+<body>
+    <div class="container">
+        <h2>Profile viewer</h2>
+            <p>Generate QR</p>
+            <input type="text" placeholder="Enter your text" id="User"><br><br>
+            <button onclick="Profile()">Check</button>
+            <br><br><hr>
+        <a href="" id="ans" ></a>
+    </div>
+
+    <script>
+        let URL = document.getElementById("User");
+        let ans = document.getElementById("ans");
+
+        function Profile(){
+
+            ans.href = "https://github.com/" + User.value;
+
+            document.getElementById("ans").innerHTML = "view profile";
+        }
+
+
+    </script>
+    
+</body>
+</html>
